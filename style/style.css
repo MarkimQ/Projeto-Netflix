@@ -1,0 +1,104 @@
+:root{
+    --vermelho:#E50914;
+    --preto:#141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--preto);
+font-family: 'Times New Roman', Times, serif;
+}
+
+body h3 {
+    color: white;
+}
+.sinopse{
+    color: white;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+header .logo{
+    margin-left: 10px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+/* FILME PRINCIPAL */
+
+.filme-principal {
+    font-size: 20px;
+    background: url("../img/Space_Jam_folder.jpg");
+    height: 400px;
+    background-size: cover;
+
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: flex-start;
+}
+
+.filme-principal .sinopse{
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+.titulo{
+    margin-top: 15px;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+
+    padding: 15px; /*espaço entre as bordas sempre no sentido horario*/
+    margin-right: 20px; /*espaçamento entre os botoes*/
+
+    cursor: pointer; /* coloca o cursor do mouse como ponteiro quando esta sobre os botoes */
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.container{
+    margin-left: 30px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.box-filmes{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
